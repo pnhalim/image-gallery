@@ -9,12 +9,12 @@ const Footer = () => {
       </div>
       <ul className='flex justify-center pt-2'>
         <li className='px-2'>
-          <a href="https://github.com/pnhalim/image-gallery" target='_blank'>
+          <a href="https://github.com/pnhalim/image-gallery" target='_blank' rel="noreferrer">
             <img className='w-6 justify-center opacity-70 hover:opacity-100 transition-opacity' src={githubIcon} alt="GitHub"></img>
           </a>
         </li>
         <li className='px-2'>
-          <a href="https://www.linkedin.com/in/patrick-halim/" target='_blank'>
+          <a href="https://www.linkedin.com/in/patrick-halim/" target='_blank' rel="noreferrer">
             <img className='w-6 justify-center opacity-70 hover:opacity-100 transition-opacity' src={linkedinIcon} alt="GitHub"></img>
           </a>
         </li>
