@@ -18,18 +18,23 @@ function App() {
       .catch(err => console.log(err));
   }, [term]);
 
+  const search = (text) => {
+    setTerm(text);
+    window.scrollTo(0, 0);
+  }; 
+
   return (
     <div className="container mx-auto">
       {/* Image Search Bar */}
-      <ImageSearch searchText={(text) => setTerm(text)}></ImageSearch>
+      <ImageSearch searchText={search}></ImageSearch>
 
       {/* No Search Results */}
       {!isLoading && images.length === 0 &&<h1 className="text-6xl text-center mx-auto mt-32 text-slate-800">No Images Found</h1> }
 
       {/* Image Cards */}
-      {isLoading ? <h1 className="text-6xl text-center mx-auto mt-32">Loading...</h1> : <div className="grid grid-cols-3 lg:grid-cols-4 gap-4">
+      {isLoading ? <h1 className="text-6xl text-center mx-auto mt-32 text-accent">Loading...</h1> : <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mx-10">
         {images.map(image => (
-          <ImageCard key={image.id} image={image}></ImageCard>
+          <ImageCard key={image.id} image={image} search={search}></ImageCard>
         ))}
       </div>}
 

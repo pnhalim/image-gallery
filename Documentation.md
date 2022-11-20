@@ -14,3 +14,13 @@ https://www.youtube.com/watch?v=FiGmAI5e91M)
 ## Images API
 https://pixabay.com/api/docs/
 
+## Beyond the Tutorial
+- Added a header
+- Added a footer
+- Added drop shadow effects and transitions
+- Turned tags into buttons that search for similar images
+
+- Added copy button
+
+TODO: 
+Finish Header, Footer, add more effects
